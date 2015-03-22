@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Example inWords</title>
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="jquery.inWords-1.0.min.js"></script>
+    </head>
+    <body>
+        <p id="convertThis" >1234.5789</p>
+        <script>
+        jQuery(document).ready( function($) {
+            $('#convertThis').inWords({
+                format		: 'roundedTo2Decimal', // Eg. rounded,roundedTo2Decimal
+                INRCaption	: 'true',
+                prefix 	    : 'Awesome ! You won ' ,
+                suffix      : ' only.'
+            });
+        });
+        </script>
+    </body>
+</html>
