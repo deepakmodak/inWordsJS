@@ -23,7 +23,13 @@ Simply download & include jQuery and inWordsJS in your project :
  <script src="jquery.inWords-1.0.min.js"></script>
 ```
 
-Call function on required tag
+Add your desired tag :
+
+```bash
+  <p id="convertThis" >1234.5789</p>
+```
+
+Call function on required tag :
 
 ```bash
     $('#convertThis').inWords({
@@ -32,4 +38,10 @@ Call function on required tag
         prefix 	    : 'Awesome ! You won ' ,
         suffix      : ' only.'
     });
+```
+
+Output :
+
+```bash
+  Awesome ! You won one thousand two hundred thirty four rupees and fifty eight paise only.
 ```
